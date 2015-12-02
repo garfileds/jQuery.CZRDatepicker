@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>test for jquery.datepicker</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>一个诡异的问题：开F12时会autohide，不开则不会</p>
+	<input type="text" id="picker_1">
+	<div class="line" style="height: 100px;"></div>
+	<input type="text" id="picker_2">
+
+	<script src="../js/lib/jquery-1.9.1.js"></script>
+	<script src="../jquery.CZRDatepicker.js"></script>
+	<script>
+		$('#picker_1').CZRDatepicker({
+			followOffset: [0, 24]
+		});
+		$('#picker_2').CZRDatepicker({
+			followOffset: [0, 24],
+			showMode: 1
+		});
+	</script>
+</body>	
+</html>
